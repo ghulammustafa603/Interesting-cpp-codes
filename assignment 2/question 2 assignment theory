@@ -1,0 +1,26 @@
+#include<iostream>
+#include<cstdlib>
+using namespace std;
+void date(int a,int b,int c,int day, int month, int year)
+{
+    cout<<"Enter the your birthday date like(like yyyy mm dd):"<<endl;
+    cin>>a>>b>>c;
+    
+    cout<<"Enter the current date like(like yyyy mm dd):"<<endl;
+    cin>>year>>month>>day;
+    int ageDay(0), ageMonth(0),ageYear(0);
+    ageDay=day-c;
+    ageMonth=month-b;
+    ageYear=year-a;
+    cout<<"Your total age is:"<<abs(ageYear)<<" years "<<abs(ageMonth)<<" months "<<abs(ageDay)<<" days!";
+
+}
+int main()
+{
+
+    int a,b,c,day,month,year; 
+    
+    date(a,b,c,day,month,year);
+	
+return 0;
+}
